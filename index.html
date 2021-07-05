@@ -14,7 +14,7 @@
 <body>
 
 	<div class="header">
-		
+
 		<div class="container">
 			<div class="row row1">
 				<div class="col-8">
@@ -29,24 +29,68 @@
 				</div>
 			</div>
 
-			<div class="container can1">
-				<div class="row">
-					<div class="col" style="background-color:rgb(230, 92, 1) ;"><a href="index.html">Home</a></div>
-					<div class="col col-md-auto">About Us</div>
-					<div class="col">Portfolio</div>
-					<div class="col col-md-auto">Famous Alumni</div>
-					<div class="col">History</div>
-					<div class="col"><a href="contact.html">Contact</a></div>
-					<div class="col"><a href="blog.html">Blog</a></div>
-					<div class="col"><img src="https://img.icons8.com/color/30/000000/twitter--v1.png" /></div>
-					<div class="col"><img src="https://img.icons8.com/color/30/000000/facebook-new.png" /></div>
-					<div class="col"><img src="https://img.icons8.com/color/30/000000/google-plus--v1.png" /></div>
-					<div class="col"><img src="https://img.icons8.com/fluent/30/000000/youtube-squared.png" /></div>
-					<div class="col"><img src="https://img.icons8.com/fluent/30/000000/linkedin.png" /></div>
+
+			<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+				<button class="navbar-toggler" type="button" data-toggle="collapse"
+					data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto">
+						<li class="nav-item active">
+							<a class="nav-link" href="index.html"> HOME <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#"> ABOUT US <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#"> PORTFOLIO <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#"> FAMOUS ALUMNI <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#"> HISTORY <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="contact.html"> CONTACT <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="blog.html"> BLOG <span class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#"><img
+									src="https://img.icons8.com/color/30/000000/twitter--v1.png" /><span
+									class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#"><img
+									src="https://img.icons8.com/color/30/000000/facebook-new.png" /><span
+									class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#"><img
+									src="https://img.icons8.com/color/30/000000/google-plus--v1.png" /><span
+									class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#"><img
+									src="https://img.icons8.com/fluent/30/000000/youtube-squared.png" /><span
+									class="sr-only">(current)</span></a>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#"><img
+									src="https://img.icons8.com/fluent/30/000000/linkedin.png" /><span
+									class="sr-only">(current)</span></a>
+						</li>
+					</ul>
 				</div>
-			</div>
+			</nav>
 		</div>
 	</div>
+
 
 
 
@@ -302,26 +346,37 @@
 		border-top: 10px solid black;
 	}
 
-	.can1 .col {
-		margin-top: 20px;
-		background-color: rgb(39, 39, 39);
+	.navbar {
+		margin-top: 30px;
+	}
+
+	.nav-item {
 		border-right: 2px solid black;
-		padding-bottom: 15px;
-		padding-top: 15px;
 		color: white;
 	}
 
-	.can1 .col a {
+	.nav-item a {
 		color: white;
 	}
 
-	.can1 .col:hover {
+	.nav-item:hover {
 		background-color: rgb(230, 92, 1);
 	}
 
 	.header {
 		background-color: rgb(210, 210, 210);
 	}
+
+	.navbar li {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+
+
+
+
+
+
 
 	.carousel img {
 		height: 430px;
@@ -389,17 +444,32 @@
 	}
 
 
-    @media (min-width: 320px) and (max-width: 768px){
-        
-	.carousel-caption h1 {
-		font-size: 30px;
-	}
-	.carousel-caption h4 {
-		font-size: 15px;
+	@media (min-width: 320px) and (max-width: 768px) {
+
+		.carousel-caption h1 {
+			font-size: 30px;
+		}
+
+		.carousel-caption h4 {
+			font-size: 15px;
+		}
+
+		.carousel-caption button {
+			margin-bottom: 20px;
+		}
+
+		.header h1 {
+			font-size: 25px;
+			;
+		}
 	}
 
-	.carousel-caption button {
-		margin-bottom: 20px;
-	}
 
+	@media (min-width: 1024px) and (max-width: 1439px) {
+
+
+		.navbar li {
+			padding-left: 0px;
+			padding-right: 0px;
+		}
 	}
